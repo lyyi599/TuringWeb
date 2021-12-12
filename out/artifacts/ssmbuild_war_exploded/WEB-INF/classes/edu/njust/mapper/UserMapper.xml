@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.njust.mapper.UserMapper">
+
+    <!--增加一个User-->
+    <insert id="addUser" parameterType="User">
+        insert into user(school_name,team_name,num1_name,num2_name,num3_name,email,qq_number)
+        values (#{school_name},#{team_name}, #{num1_name},#{num2_name},#{num3_name}, #{email},#{qq_number})
+    </insert>
+    <!--查询全部Docter-->
+    <select id="queryAllUser" resultType="User">
+        SELECT * from user
+    </select>
+
+</mapper>

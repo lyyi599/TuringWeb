@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.opengauss:opengauss-jdbc:2.0.1-compatibility">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opengauss/opengauss-jdbc/2.0.1-compatibility/opengauss-jdbc-2.0.1-compatibility.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opengauss/opengauss-jdbc/2.0.1-compatibility/opengauss-jdbc-2.0.1-compatibility-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/opengauss/opengauss-jdbc/2.0.1-compatibility/opengauss-jdbc-2.0.1-compatibility-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

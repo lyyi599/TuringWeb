@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="中兴图灵杯由南京理工大学计算机科协承办">
+    <meta name="keywords" content="南京理工大学计算机科协、图灵杯、中兴通讯">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="改编：李洋洋 陈博宏 杨宇涛 夏厦 email:2584258188@qq.com">
+
+    <title>"中兴·图灵杯"|用户手册</title>
+
+    <link rel="canonical" href="http://v3.bootcss.com/components/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Optional Bootstrap Theme -->
+
+    <link href="data:text/css;charset=utf-8," data-href="/dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+    <!-- Documentation extras -->
+
+    <link href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/assets/css/docs.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <!--<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/apple-touch-icon.png">
+		<link rel="icon" href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/favicon.ico">-->
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?bdb993b828cbe079a7fbc1a951f44726";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /*主体样式*/
+        html,
+        body {
+            font-family: "Segoe UI";
+            line-height: 1.7em;
+        }
+
+        /*navbar*/
+
+        .navbar {
+            background: #333;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .navbar .navbar-img {
+            padding-top: 10px;
+            float: left;
+            width: 128px;
+            height: 44.1px;
+        }
+
+        .navbar .navbar-img img {
+            width: 128px;
+            height: 44.1px;
+        }
+
+        .navbar a {
+            color: #fff;
+            /*重新设置a标签字体*/
+        }
+
+        .navbar h1 {
+            float: left;
+            margin-top: 8px;
+        }
+
+        .navbar h1 a{
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            float: right;
+            list-style: none;
+            margin-bottom:0 ;
+        }
+
+        .navbar ul li {
+            float: left;
+        }
+
+        .navbar ul li a {
+            display: block;
+            /*转化为块标签*/
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover,
+        .navbar ul li a.now {
+            /*hover效果，鼠标*/
+            background: #444;
+            color: #e89300;
+        }
+        /*表格*/
+        ul{margin:0;padding:0;list-style:none;}
+        .table{display:table;border-collapse:collapse;border:1px solid #ccc;}
+        .table-caption{display:table-caption;margin:0;padding:0;font-size:16px;}
+        .table-column-group{display:table-column-group;}
+        .table-column{display:table-column;width:100px;}
+        .table-row-group{display:table-row-group;}
+        .table-row{display:table-row;}
+        .table-row-group .table-row:hover,.table-footer-group .table-row:hover{background:#f6f6f6;}
+        .table-cell{display:table-cell;padding:0 5px;border:1px solid #ccc;}
+        .table-header-group{display:table-header-group;background:#eee;font-weight:bold;}
+        .table-footer-group{display:table-footer-group;}
+    </style>
+
+</head>
+
+<body>
+<a id="skippy" class="sr-only sr-only-focusable text-center" href="#content">
+    <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+    </div>
+</a>
+
+<!--导航栏-->
+<!--<header>
+			<nav id="navbar">
+				<div class="container">
+					<div class="navbar-img"><img src="./images/中兴 logo.png"></div>
+					<h1><a href="index.jsp">中兴·图灵杯</a></h1>
+					左侧logo，点击可以跳转首页
+					<ul>
+						<li>
+							<a href="index.jsp">首页</a>
+						</li>
+						<li>
+							<a href="signup.jsp">报名</a>
+						</li>
+						<li>
+							<a class="now" href="guide.html">用户手册</a>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+						<li>
+							<a href="contact.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>-->
+
+<nav class="navbar" >
+    <div class="container" >
+        <div class="navbar-img"><img src="images/中兴 logo.png"></div>
+        <h1><a href="index.jsp">中兴·图灵杯</a></h1>
+        <ul>
+            <li>
+                <a href="index.jsp">首页</a>
+            </li>
+            <li>
+                <a href="signup.jsp">报名</a>
+            </li>
+            <li>
+                <a class="now" href="guide.html">用户手册</a>
+            </li>
+            <li>
+                <a href="live.jsp">直播</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container bs-docs-container">
+
+    <div class="row">
+        <div class="col-md-9" role="main">
+            <div class="bs-docs-section">
+                <h1 id="glyphicons" class="page-header">一、单位信息</h1>
+                <h4>游戏以每秒<code>30帧</code>运行，也就是说每秒会调用选手代码中的Update()函数30次</h4>
+
+                <h2 id="glyphicons-glyphs">地图</h2>
+                <div class="bs-callout bs-callout-danger" id="callout-glyphicons-size">
+                    <h4>尺寸：</h4>
+                    <p>50*50， 起始点坐标为（0，0），终止点坐标为（49，49）。</p>
+                </div>
+                <div class="bs-callout bs-callout-info" id="callout-glyphicons-attention">
+                    <h4>注意事项：</h4>
+                    <ul>
+                        <li>1、在地图范围内有若干固定位置的障碍物，具体位置可以通过对应方法获得。</li>
+                        <li>2、已经被涂过色的格子是可以被另外一队重新涂色的，但不能被队友重新涂色。</li>
+                    </ul>
+                </div>
+                <p>以下是每队的出生点和子弹颜色</p>
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">接口名称</li>
+                            <li class="table-cell">所属阵营</li>
+                            <li class="table-cell">出生点</li>
+                            <li class="table-cell">子弹颜色</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">player1</li>
+                            <li class="table-cell">1</li>
+                            <li class="table-cell">（1，1）</li>
+                            <li class="table-cell">绿色</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">player2</li>
+                            <li class="table-cell">1</li>
+                            <li class="table-cell">（1，1）</li>
+                            <li class="table-cell">绿色</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">player3</li>
+                            <li class="table-cell">2</li>
+                            <li class="table-cell">（48，48）</li>
+                            <li class="table-cell">蓝色</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">player4</li>
+                            <li class="table-cell">2</li>
+                            <li class="table-cell">（48，48）</li>
+                            <li class="table-cell">蓝色</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--                <div class="bs-callout bs-callout-danger" id="callout-glyphicons-dont-mix">-->
+                <!--                    <h4>不要和其他组件混合使用</h4>-->
+                <!--                    <p>图标类不能和其它组件直接联合使用。它们不能在同一个元素上与其他类共同存在。应该创建一个嵌套的 <code>&lt;span&gt;</code> 标签，并将图标类应用到这个 <code>&lt;span&gt;</code> 标签上。</p>-->
+                <!--                </div>-->
+                <!--                <div class="bs-callout bs-callout-danger" id="callout-glyphicons-empty-only">-->
+                <!--                    <h4>只对内容为空的元素起作用</h4>-->
+                <!--                    <p>图标类只能应用在不包含任何文本内容或子元素的元素上。</p>-->
+                <!--                </div>-->
+                <!--                <div class="bs-callout bs-callout-info" id="callout-glyphicons-location">-->
+                <!--                    <h4>改变图标字体文件的位置</h4>-->
+                <!--                    <p>Bootstrap 假定所有的图标字体文件全部位于 <code>../fonts/</code> 目录内，相对于预编译版 CSS 文件的目录。如果你修改了图标字体文件的位置，那么，你需要通过下面列出的任何一种方式来更新 CSS 文件：</p>-->
+                <!--                    <ul>-->
+                <!--                        <li>在 Less 源码文件中修改 <code>@icon-font-path</code> 和/或 <code>@icon-font-name</code> 变量。</li>-->
+                <!--                        <li>利用 Less 编译器提供的-->
+                <!--                            <a href="http://lesscss.org/usage/#less-options-relative-urls">相对 URL 地址参数</a>。</li>-->
+                <!--                        <li>修改经过编译的 CSS 文件中的 <code>url()</code> 路径。</li>-->
+                <!--                    </ul>-->
+                <!--                    <p>根据你自身的情况选择一种方式即可。</p>-->
+                <!--                </div>-->
+                <!--                <div class="bs-callout bs-callout-warning" id="callout-glyphicons-accessibility">-->
+                <!--                    <h4>图标的可访问性</h4>-->
+                <!--                    <p>现代的辅助技术能够识别并朗读由 CSS 生成的内容和特定的 Unicode 字符。为了避免 屏幕识读设备抓取非故意的和可能产生混淆的输出内容（尤其是当图标纯粹作为装饰用途时），我们为这些图标设置了 <code>aria-hidden="true"</code> 属性。</p>-->
+                <!--                    <p>如果你使用图标是为了表达某些含义（不仅仅是为了装饰用），请确保你所要表达的意思能够通过被辅助设备识别，例如，包含额外的内容并通过 <code>.sr-only</code> 类让其在视觉上表现出隐藏的效果。</p>-->
+                <!--                    <p>如果你所创建的组件不包含任何文本内容（例如， <code>&lt;button&gt;</code> 内只包含了一个图标），你应当提供其他的内容来表示这个控件的意图，这样就能让使用辅助设备的用户知道其作用了。这种情况下，你可以为控件添加 <code>aria-label</code> 属性。</p>-->
+                <!--                </div>-->
+                <h2 id="glyphicons-how-to-use">角色</h2>
+                <div class="bs-callout bs-callout-warning" id="role">
+                    <h4>角色有关概述</h4>
+                    <p>1、玩家控制的角色共有四种，每种之间仅有模型不同（只与视觉效果相关，不影响游戏公平性），其余部分均相同。</p>
+                    <p>2、角色当前血量降到0及以下时会死亡，死亡角色不能被敌人看见，会在死亡10s后在初始出生点复活,让其在视觉上表现出隐藏的效果。</p>
+                </div>
+                <p>以下为角色基本属性</p>
+
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <!--<div class="table-column"></div>-->
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">属性</li>
+                            <li class="table-cell">默认值</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">生命值</li>
+                            <li class="table-cell">100</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">角色阵营</li>
+                            <li class="table-cell">1或2</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">移动速度</li>
+                            <li class="table-cell">3格边长/s</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">弹夹容量</li>
+                            <li class="table-cell">10</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">换弹时间</li>
+                            <li class="table-cell">90帧</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">射击动作时间</li>
+                            <li class="table-cell">15帧</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">射击冷却时间</li>
+                            <li class="table-cell">30帧</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">射击范围</li>
+                            <li class="table-cell">半径为10格边长的圆</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">子弹爆炸范围</li>
+                            <li class="table-cell">5*5方格去掉4个角</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">子弹伤害</li>
+                            <li class="table-cell">10</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">子弹飞行速度</li>
+                            <li class="table-cell">8格边长/s</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">可检测敌人范围</li>
+                            <li class="table-cell">半径为15格边长的圆</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">死亡重生时间</li>
+                            <li class="table-cell">10s</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <h2 id="glyphicons-examples">障碍物</h2>
+                <div class="bs-callout bs-callout-info" id="callout-glyphicons-location">
+                    <ul>
+                        <li>1、障碍物分为可破坏障碍物和不可破坏障碍物两种，其中可破坏障碍物在场景中以金色箱子形式显示。障碍物可以阻挡子弹的运动，但无法阻挡子弹爆炸的扩散（也就是说子弹碰到障碍物就会炸，而且会炸到障碍物的另一边）。</li>
+                        <li>2、当可破坏障碍物血量降到0及以下时，障碍物会被破坏，其原来所在的方格变为<code>可涂色</code>方格。</li>
+                        <li>3、<code>注意：</code>破坏可破坏障碍物的那一发子弹<code>不会</code>将可破坏障碍物所在方格涂色。</li>
+                        <li>4、<code>可破坏障碍物</code>的血量为<code>200</code></li>
+                    </ul>
+                </div>
+
+                <p><center><img src="./images/scene.png"></center></p>
+
+                <h2 id="glyphicons-buff">BUFF</h2>
+                <div class="bs-callout bs-callout-info" id="buff">
+                    <p>游戏中0s，30s，60s，90s会在固定BUFF点刷新</p>
+                </div>
+                <p>BUFF分为三种</p>
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">BUFF类型</li>
+                            <li class="table-cell">BUFF效果</li>
+                            <li class="table-cell">持续时间</li>
+                            <li class="table-cell">	刷新点</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">回血BUFF</li>
+                            <li class="table-cell">立即恢复50点角色生命（不超过生命上限100）</li>
+                            <li class="table-cell">立刻生效</li>
+                            <li class="table-cell">	（10，10），（39，39）</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">加速BUFF</li>
+                            <li class="table-cell">当前角色移速变为1.2倍</li>
+                            <li class="table-cell">15s</li>
+                            <li class="table-cell">（5 ，45） ，（44，4）</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">攻击BUFF</li>
+                            <li class="table-cell">子弹爆炸范围变为5*5每边中间多一个并且子弹伤害变为15，射击范围也增大为半径15格边长的圆</li>
+                            <li class="table-cell">15s</li>
+                            <li class="table-cell">	（20，29），（29，20）</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>子弹范围调整示意图</h4>
+                <center><img src="./images/attack.png"></center>
+            </div>
+
+
+
+
+            <div class="bs-docs-section">
+                <h1 id="dropdowns" class="page-header">二、基础类声明</h1>
+
+                <h2 id="dropdowns-example">ICharacter</h2>
+                <p>公开数据</p>
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">数据类型</li>
+                            <li class="table-cell">数据名称</li>
+                            <li class="table-cell">数据释义</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">x</li>
+                            <li class="table-cell">角色当前的x坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">y</li>
+                            <li class="table-cell">角色当前的y坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">hp</li>
+                            <li class="table-cell">角色当前的血量</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">playerid</li>
+                            <li class="table-cell">角色编号（值为1，2，3，4）</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">totDmg</li>
+                            <li class="table-cell">当前角色的有效伤害数</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">totColor</li>
+                            <li class="table-cell">当前角色的有效涂色数</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">score</li>
+                            <li class="table-cell">当前角色的分数</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>只对自己及队友可见的数据</p>
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">数据类型</li>
+                            <li class="table-cell">数据名称</li>
+                            <li class="table-cell">数据释义</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">firingTimer</li>
+                            <li class="table-cell">换弹动作计时器，表示换弹动作剩余时间，以帧数形式表示</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">fireCD</li>
+                            <li class="table-cell">开火动作计时器，表示开火动作剩余时间，以帧数形式表示</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">bullets</li>
+                            <li class="table-cell">弹夹剩余子弹数</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">respawnTimer</li>
+                            <li class="table-cell">重生计时器，表示重生剩余时间，以帧数形式表示</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">atkBuff</li>
+                            <li class="table-cell">攻击BUFF计时器，表示攻击BUFF剩余时间，以帧数形式表示，初始为0</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">speedBuff</li>
+                            <li class="table-cell">加速BUFF计时器，表示加速BUFF剩余时间，以帧数形式表示，初始为0</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--                <p>将下拉菜单触发器和下拉菜单都包裹在 <code>.dropdown</code> 里，或者另一个声明了 <code>position: relative;</code> 的元素。然后加入组成菜单的 HTML 代码。</p>-->
+                <!--                <div class="bs-example" data-example-id="static-dropdown">-->
+                <!--                    <div class="dropdown clearfix">-->
+                <!--                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                <!--                            Dropdown-->
+                <!--                            <span class="caret"></span>-->
+                <!--                        </button>-->
+                <!--                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                <!--                            <li>-->
+                <!--                                <a href="#">Action</a>-->
+                <!--                            </li>-->
+                <!--                            <li>-->
+                <!--                                <a href="#">Another action</a>-->
+                <!--                            </li>-->
+                <!--                            <li>-->
+                <!--                                <a href="#">Something else here</a>-->
+                <!--                            </li>-->
+                <!--                        </ul>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!-- /example -->
+                <!--                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>-->
+                <!--  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"dropdownMenu1"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span><span class="nt">&gt;</span>-->
+                <!--    Dropdown-->
+                <!--    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>-->
+                <!--  <span class="nt">&lt;/button&gt;</span>-->
+                <!--  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"dropdownMenu1"</span><span class="nt">&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--  <span class="nt">&lt;/ul&gt;</span>-->
+                <!--<span class="nt">&lt;/div&gt;</span></code></pre></figure>-->
+
+                <!--                <p>通过为下拉菜单的父元素设置 <code>.dropup</code> 类，可以让菜单向上弹出（默认是向下弹出的）。</p>-->
+                <!--                <div class="bs-example" data-example-id="static-dropup">-->
+                <!--                    <div class="dropup clearfix">-->
+                <!--                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                <!--                            Dropup-->
+                <!--                            <span class="caret"></span>-->
+                <!--                        </button>-->
+                <!--                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">-->
+                <!--                            <li>-->
+                <!--                                <a href="#">Action</a>-->
+                <!--                            </li>-->
+                <!--                            <li>-->
+                <!--                                <a href="#">Another action</a>-->
+                <!--                            </li>-->
+                <!--                            <li>-->
+                <!--                                <a href="#">Something else here</a>-->
+                <!--                            </li>-->
+                <!--                        </ul>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                &lt;!&ndash; /example &ndash;&gt;-->
+                <!--                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropup"</span><span class="nt">&gt;</span>-->
+                <!--  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"dropdownMenu2"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>-->
+                <!--    Dropup-->
+                <!--    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>-->
+                <!--  <span class="nt">&lt;/button&gt;</span>-->
+                <!--  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"dropdownMenu2"</span><span class="nt">&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>-->
+                <!--    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>-->
+                <!--  <span class="nt">&lt;/ul&gt;</span>-->
+                <!--<span class="nt">&lt;/div&gt;</span></code></pre></figure>-->
+
+                <h2 id="dropdowns-alignment">IBlock</h2>
+                <!--                <p>B默认情况下，下拉菜单自动沿着父元素的上沿和左侧被定位为 100% 宽度。 为 <code>.dropdown-menu</code> 添加 <code>.dropdown-menu-right</code> 类可以让菜单右对齐。</p>-->
+                <!--                <div class="bs-callout bs-callout-warning" id="callout-dropdown-positioning">-->
+                <!--                    <h4>可能需要额外的定位May require additional positioning</h4>-->
+                <!--                    <p>在正常的文档流中，通过 CSS 为下拉菜单进行定位。这就意味着下拉菜单可能会由于设置了 <code>overflow</code> 属性的父元素而被部分遮挡或超出视口（viewport）的显示范围。如果出现这种问题，请自行解决。</p>-->
+                <!--                </div>-->
+                <!--                <div class="bs-callout bs-callout-warning" id="callout-dropdown-pull-right">-->
+                <!--                    <h4>不建议使用 <code>.pull-right</code></h4>-->
+                <!--                    <p>从 v3.1.0 版本开始，我们不再建议对下拉菜单使用 <code>.pull-right</code> 类。如需将菜单右对齐，请使用 <code>.dropdown-menu-right</code> 类。导航条中如需添加右对齐的导航（nav）组件，请使用 <code>.pull-right</code> 的 mixin 版本，可以自动对齐菜单。如需左对齐，请使用 <code>.dropdown-menu-left</code> 类。</p>-->
+                <!--                </div>-->
+                <!--                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right"</span> <span class="na">aria-labelledby=</span><span class="s">"dLabel"</span><span class="nt">&gt;</span>-->
+                <!--  ...-->
+                <!--<span class="nt">&lt;/ul&gt;</span></code></pre></figure>-->
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">数据类型</li>
+                            <li class="table-cell">数据名称</li>
+                            <li class="table-cell">数据释义</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">x</li>
+                            <li class="table-cell">该障碍物的x坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">y</li>
+                            <li class="table-cell">该障碍物的y坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">hp</li>
+                            <li class="table-cell">该障碍物当前的血量（不可破坏障碍物血量为-1）</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <h2 id="dropdowns-headers">IItem</h2>
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">数据类型</li>
+                            <li class="table-cell">数据名称</li>
+                            <li class="table-cell">数据释义</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">x</li>
+                            <li class="table-cell">该BUFF的x坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">y</li>
+                            <li class="table-cell">该BUFF的y坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">buffid</li>
+                            <li class="table-cell">BUFF类型（0为加血BUFF，1为攻击BUFF，2为加速BUFF）</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">time</li>
+                            <li class="table-cell">BUFF的持续时间（0为即时生效，比如加血BUFF）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 id="dropdowns-divider">Msg</h2>
+                <div class="table">
+                    <h2 class="table-caption"></h2>
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">数据类型</li>
+                            <li class="table-cell">数据名称</li>
+                            <li class="table-cell">数据释义</li>
+                        </ul>
+                    </div>
+                    <!--                    <div class="table-footer-group">-->
+                    <!--                        <ul class="table-row">-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                            <li class="table-cell">footer</li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">int</li>
+                            <li class="table-cell">type</li>
+                            <li class="table-cell">信号的类型，0正在路上，1进攻，2防守，3发现敌人</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">px</li>
+                            <li class="table-cell">目标位置的x坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">py</li>
+                            <li class="table-cell">目标位置的y坐标</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">qx</li>
+                            <li class="table-cell">预留坐标点</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">float</li>
+                            <li class="table-cell">qy</li>
+                            <li class="table-cell">预留坐标点</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="bs-docs-section">
+                <h1 id="btn-groups" class="page-header">三、选手方法</h1>
+                <h2 id="btn-groups-single">玩家操作类</h2>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">int</span> <span class="na">moveTo</span><span class="s">(float x,float y)</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="user-operation">
+                    <h4>moveTo函数</h4>
+                    <p>用途：让玩家角色移动到指定坐标</p>
+                    <p>参数：地图有效坐标（x，y），注意x，y都为float型，使用时常量请写成类似1.2f的形式</p>
+                    <p>返回值：-1该角色已经死亡 0成功 1已在该位置 2正在开火无法移动 其余返回值为内部错误</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">int</span> <span class="na">fireTo</span><span class="s">(float x,float y)</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="fire">
+                    <h4>fireTo函数</h4>
+                    <p>用途：让玩家角色向指定坐标方向开火</p>
+                    <p>参数：地图有效坐标（x，y），注意x，y都为float型，使用时常量请写成类似1.2f的形式</p>
+                    <p>返回值：-1该角色已经死亡 0成功 1正在开火 2开火在CD 其余返回值为内部错误</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">int</span> <span class="na">reload</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="fire">
+                    <h4>reload函数</h4>
+                    <p>用途：玩家角色装填子弹</p>
+                    <p>参数：无</p>
+                    <p>返回值：-1该角色已经死亡 0成功 1子弹已满 2正在装弹</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">bool</span> <span class="na">sendMsg</span><span class="s">(Msg msg)</span> </code></pre></figure>
+
+                <div class="bs-callout bs-callout-warning" id="send">
+                    <h4>sendMsg函数</h4>
+                    <p>用途：玩家角色向队友发送信息</p>
+                    <p>参数：</p>
+                    <p>返回值：发送成功返回true</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">float</span> <span class="na">getLeftTime</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getLeftTime">
+                    <h4>getLeftTime函数</h4>
+                    <p>用途：获取游戏剩余时间</p>
+                    <p>参数：无</p>
+                    <p>返回值：一个[0,120]之间的浮点数代表游戏剩余时间</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">List&lt;ICharacter&gt;</span> <span class="na">getEnemys</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getEnemys">
+                    <h4>getEnemys函数</h4>
+                    <p>用途：获取玩家可见范围内的敌人的信息</p>
+                    <p>参数：无</p>
+                    <p>返回值：一个ICharacter列表，为空说明可见范围内没有敌人</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">List&lt;IBlock&gt;</span> <span class="na">getBlocks</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getBlocks">
+                    <h4>getBlocks函数</h4>
+                    <p>用途：获取地图上所有存在的障碍物的信息</p>
+                    <p>参数：无</p>
+                    <p>返回值：一个IBlock列表</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">List&lt;IItem&gt;</span> <span class="na">getItems</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getItems">
+                    <h4>getItems函数</h4>
+                    <p>用途：获取地图上所有存在的BUFF的信息</p>
+                    <p>参数：无</p>
+                    <p>返回值：一个IItem列表</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">int[,]</span> <span class="na">getFloors</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getFloors">
+                    <h4>getFloors函数</h4>
+                    <p>用途：获取玩家可见的地板情况</p>
+                    <p>参数：无</p>
+                    <p>返回值：返回一个二维数组，-2为可破坏障碍物，-1为不可破坏障碍物，0未涂色，1涂队伍1颜色，2涂队伍2颜色</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">ICharacter</span> <span class="na">getSelf</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getSelf">
+                    <h4>getSelf函数</h4>
+                    <p>用途：获取玩家自己的个人数据</p>
+                    <p>参数：无</p>
+                    <p>返回值： 一个完整的ICharacter，存有玩家自己的数据</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">ICharacter</span> <span class="na">getTeammate</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getTeammate">
+                    <h4>getTeammate函数</h4>
+                    <p>用途：获取玩家队友的个人数据</p>
+                    <p>参数：无</p>
+                    <p>返回值： 一个完整的ICharacter，存有队友的数据</p>
+                </div>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">List&lt;Msg&gt;</span> <span class="na">getMsg</span><span class="s">()</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="getMsg">
+                    <h4>getMsg函数</h4>
+                    <p>用途：获取队友所发的信息</p>
+                    <p>参数：无</p>
+                    <p>返回值： 对应的Msg列表</p>
+                </div>
+                <h2 id="btn-groups-toolbar">调试辅助类</h2>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">void</span> <span class="na">Log</span><span class="s">(string str)</span> </code></pre></figure>
+                <div class="bs-callout bs-callout-warning" id="Log">
+                    <h4>Log函数</h4>
+                    <p>用途：输出调试日志，日志将会显示在游戏界面中</p>
+                    <p>参数：str为想要输出的调试信息字符串</p>
+                    <p>返回值：无</p>
+                </div>
+            </div>
+
+            <div class="bs-docs-section">
+                <h1 id="judge" class="page-header">四、评分标准</h1>
+                <p>游戏结束时玩家总分 = 个人涂色面积排名分+团队涂色面积胜利分+个人造成伤害分</p>
+
+                <h2 id="judge-selfcolor">个人涂色面积排名分计算</h2>
+                <div class="bs-callout bs-callout-danger">
+                    <p>注意：只有当角色向空地或者敌人已经涂色的方格涂色时才视作有效涂色</p>
+                </div>
+                <div class="table">
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">排名</li>
+                            <li class="table-cell">积分</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">1</li>
+                            <li class="table-cell">4</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">2</li>
+                            <li class="table-cell">3</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">3</li>
+                            <li class="table-cell">2</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">4</li>
+                            <li class="table-cell">1</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>个人涂色排名是非常重要的一项判据</p>
+
+                <h2 id="judge-teamcolor">团队涂色面积胜利分计算</h2>
+                <div class="bs-callout bs-callout-info">
+                    <p>团队涂色面积 = 当前时刻地图上涂本队颜色方块数/2500</br></p>
+                    <p>在游戏结束时地图上涂色格数最多的队伍每个成员获得2分，另一支队伍获得1分。</br></p>
+                    <p>若两队差距小于1%，则两队每个成员各得2分。</p>
+                </div>
+
+                <h2 id="judge-hurt">个人造成伤害分计算</h2>
+                <div class="bs-callout bs-callout-warning">
+                    <p>角色每造成100点伤害获得1分,向下取整，例如游戏结束时共造成634点伤害，则积6分。对障碍物伤害不累计。</p>
+                </div>
+            </div>
+
+            <div class="bs-docs-section">
+                <h1 id="other" class="page-header">五、其他说明</h1>
+
+                <h2 id="other-boom">关于msg结构体的说明</h2>
+                <div class="bs-callout bs-callout-default">
+                    <p>sendMsg返回值改为int，表示发送的msg的唯一id，如果发送失败返回-1，-2为内部错误请联系工作人员，msg新增成员id和rid，表示本信息的编号和本信息回复的信息的编号，如果rid不为0则表示本消息是回复某消息。</br></p>
+                    <p>发送信息时id无需设置，平台自动会进行设置，队友会接收到有id的msg</br></p>
+                </div>
+
+                <h2 id="other-boom">子弹爆炸说明</h2>
+                <div class="bs-callout bs-callout-default">
+                    <p>子弹爆炸时采用四舍六入五靠外的原则，下面举几个例子来说明：</br></p>
+                    <p>（1）若子弹在（4.1f，4.2f）爆炸，则会以坐标（4，4）为中心，向外扩散子弹射击范围，将范围内符合涂色条件（未涂色或涂对手颜色）的地面涂色，并伤害范围内的所有敌人及可破坏障碍物。</br></p>
+                    <p>（2）若子弹在（4.6f，4.2f）爆炸，则会以坐标（5，4）为中心，向外扩散子弹射击范围，将范围内符合涂色条件（未涂色或涂对手颜色）的地面涂色，并伤害范围内的所有敌人及可破坏障碍物。</br></p>
+                    <p>（3）若子弹在（4.5f，4.2f）爆炸，则会以坐标（4，4）为中心，向外扩散子弹射击范围，将范围内符合涂色条件（未涂色或涂对手颜色）的地面涂色，并伤害范围内的所有敌人及可破坏障碍物。</br></p>
+                    <p>（4）若子弹在（26.5f，4.2f）爆炸，则会以坐标（27，4）为中心，向外扩散子弹射击范围，将范围内符合涂色条件（未涂色或涂对手颜色）的地面涂色，并伤害范围内的所有敌人及可破坏障碍物。</p>
+                </div>
+
+                <h2 id="other-change">换弹间隔和攻击间隔说明</h2>
+                <div class="bs-callout bs-callout-info">
+                    <p>为了确保游戏趣味性及公平性，角色的武器具有有限的弹夹容量，并且在弹夹完全打空之前的射击间隔为30帧（也就是说从角色接收到第一个射击命令开始要经过30帧才能正常执行下一个射击命令），在弹夹打空之后会执行自动换弹，此时会有90帧的换弹时间，期间无法正常射击也无法手动换弹，但移动不受影响。</br></p>
+                    <p>ps：角色自动换弹时重复调用换弹无效。</br></p>
+                    <p>pps：如果在角色子弹满时执行换弹命令，角色不会进行换弹。</p>
+                </div>
+
+                <h2 id="other-account">子弹结算说明</h2>
+                <div class="bs-callout bs-callout-danger">
+                    <p>在极少数情况下，两颗或多颗不同的子弹会在同一时刻同一地点爆炸，此时若子弹爆炸范围内有敌人，则每颗子弹的拥有者都会对敌人造成伤害，并获得对应的伤害分，同时涂色时如果这些子弹同属一队，则子弹爆炸重叠的范围会被涂色并且两人都会加对应的涂色格数，如果不属于一队，则重叠部分不会被任何一队涂色，不计入涂色格数。</p>
+                </div>
+
+                <h2 id="other-propaganda">宣传模式键盘控制说明</h2>
+                <div class="bs-callout bs-callout-warning">
+                    <p>为了方便选手测试代码逻辑，我们在游戏的宣传模式中加入了键盘控制的功能（正式比赛无此功能），键盘控制仅对player1生效，选手在测试代码时可将代码逻辑写入其它player中并按软件包中提供的生成方法操作，运行程序后点击宣传模式即可采用键盘操控player1攻击其它player，以此来测试代码逻辑。以下是具体的操作键位。</p>
+                </div>
+                <div class="table">
+                    <div class="table-column-group">
+                        <div class="table-column"></div>
+                        <div class="table-column"></div>
+                    </div>
+                    <div class="table-header-group">
+                        <ul class="table-row">
+                            <li class="table-cell">按键</li>
+                            <li class="table-cell">效果</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-row-group">
+                        <ul class="table-row">
+                            <li class="table-cell">上方向键</li>
+                            <li class="table-cell">向上移动</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">下方向键</li>
+                            <li class="table-cell">向下移动</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">左方向键</li>
+                            <li class="table-cell">向左移动</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">右方向键</li>
+                            <li class="table-cell">向右移动</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">J键</li>
+                            <li class="table-cell">	向面朝方向射击</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">R键</li>
+                            <li class="table-cell">装弹</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">F1键</li>
+                            <li class="table-cell">切换player1的第三人称视角</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">F2键</li>
+                            <li class="table-cell">	切换player2的第三人称视角</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">F3键</li>
+                            <li class="table-cell">	切换player3的第三人称视角</li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">F4键  </li>
+                            <li class="table-cell">切换player4的第三人称视角     </li>
+                        </ul>
+                        <ul class="table-row">
+                            <li class="table-cell">F5键</li>
+                            <li class="table-cell">切换为上帝视角</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 id="other-arrage">赛程安排说明</h2>
+                <div class="bs-callout bs-callout-info">
+                    <h4>游戏基本信息</h4>
+                    <div class="table">
+                        <div class="table-column-group">
+                            <div class="table-column"></div>
+                            <div class="table-column"></div>
+                        </div>
+                        <div class="table-header-group">
+                            <ul class="table-row">
+                                <li class="table-cell">项目</li>
+                                <li class="table-cell">描述</li>
+                            </ul>
+                        </div>
+
+                        <div class="table-row-group">
+                            <ul class="table-row">
+                                <li class="table-cell">对战形式</li>
+                                <li class="table-cell">2V2</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">时间</li>
+                                <li class="table-cell">120s</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">目标</li>
+                                <li class="table-cell">对除队友以外的人物造成伤害，以及对地板进行涂色。</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">复活</li>
+                                <li class="table-cell">每位玩家有100点血，被击杀后10s将会从自己的复活点复活。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>计划时间安排</h4>
+                    <div class="table">
+                        <div class="table-column-group">
+                            <div class="table-column"></div>
+                            <div class="table-column"></div>
+                        </div>
+                        <div class="table-header-group">
+                            <ul class="table-row">
+                                <li class="table-cell">阶段</li>
+                                <li class="table-cell">时间</li>
+                                <li class="table-cell">形式</li>
+                            </ul>
+                        </div>
+
+                        <div class="table-row-group">
+                            <ul class="table-row">
+                                <li class="table-cell">初赛</li>
+                                <li class="table-cell">11月中旬</li>
+                                <li class="table-cell">线上直播</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">复赛</li>
+                                <li class="table-cell">11月下旬</li>
+                                <li class="table-cell">线上直播</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">决赛</li>
+                                <li class="table-cell">12月上旬</li>
+                                <li class="table-cell">线下晚会</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>游戏奖励</h4>
+                    <div class="table">
+                        <div class="table-column-group">
+                            <div class="table-column"></div>
+                            <div class="table-column"></div>
+                        </div>
+                        <div class="table-header-group">
+                            <ul class="table-row">
+                                <li class="table-cell">一等奖一项</li>
+                                <li class="table-cell">8000元</li>
+                            </ul>
+                        </div>
+
+                        <div class="table-row-group">
+                            <ul class="table-row">
+                                <li class="table-cell">二等奖两项</li>
+                                <li class="table-cell">4000元</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">三等奖三项</li>
+                                <li class="table-cell">2000元</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">优秀奖十四项</li>
+                                <li class="table-cell">200元</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </br>
+                    <p>赛程安排详情可参考图灵杯交流群文件：外校宣讲文件。</p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="col-md-3" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+
+                <ul class="nav bs-docs-sidenav">
+
+                    <li>
+                        <a href="#glyphicons">一、单位信息</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#glyphicons-glyphs">地图</a>
+                            </li>
+                            <li>
+                                <a href="#glyphicons-how-to-use">角色</a>
+                            </li>
+                            <li>
+                                <a href="#glyphicons-examples">障碍物</a>
+                            </li>
+                            <li>
+                                <a href="#glyphicons-buff">BUFF</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#dropdowns">二、基础类声明</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#dropdowns-example">ICharacter</a>
+                            </li>
+                            <li>
+                                <a href="#dropdowns-alignment">IBlock</a>
+                            </li>
+                            <li>
+                                <a href="#dropdowns-headers">IItem</a>
+                            </li>
+                            <li>
+                                <a href="#dropdowns-divider">Msg</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#btn-groups">三、选手方法</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#btn-groups-single">玩家操作类</a>
+                            </li>
+                            <li>
+                                <a href="#btn-groups-toolbar">调试辅助类</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#judge">四、评分标准</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#judge-selfcolor">个人涂色面积排名分计算</a>
+                            </li>
+                            <li>
+                                <a href="#judge-teamcolor">团队涂色面积胜利分计算</a>
+                            </li>
+                            <li>
+                                <a href="#judge-hurt">个人造成伤害分计算</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#other">五、其它说明</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#other-boom">关于msg结构体的说明</a>
+                            </li>
+                            <li>
+                                <a href="#other-boom">子弹爆炸说明</a>
+                            </li>
+                            <li>
+                                <a href="#other-change">换弹间隔和攻击间隔说明</a>
+                            </li>
+                            <li>
+                                <a href="#other-account">子弹结算说明</a>
+                            </li>
+                            <li>
+                                <a href="#other-propaganda">宣传模式键盘控制说明</a>
+                            </li>
+                            <li>
+                                <a href="#other-arrange">赛程安排说明</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <a class="back-to-top" href="#top">
+                    返回顶部
+                </a>
+
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer
+================================================== -->
+<footer class="bs-docs-footer">
+    <div class="container">
+        <p>欢迎参加第十四届中兴·图灵杯</p>
+        <p>我们接受一切友好交流，虚心学习。有任何错误，欢迎和我们联系，谢谢您的批评指正。</p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script>
+    window.jQuery || document.write('<script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/assets/js/vendor/jquery.min.js"><\/script>')
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/dist/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.17/assets/js/docs.min.js"></script>
+
+</body>
+
+</html>
